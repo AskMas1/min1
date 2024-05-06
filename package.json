@@ -7,9 +7,9 @@
     "npm": "10.2.3"
   },
   "scripts": {
-    "minor1-install":"npm install --prefix minor1",
+    "client-install":"npm install --prefix minor1",
     "server":"nodemon server",
-    "minor1":"npm start --prefix minor1",
+    "client":"npm start --prefix minor1",
     "dev":"concurrently \"npm run server\" \"npm run minor1\"",
     "start": "node server.js",
     "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix minor1 && npm run build --prefix minor1"
